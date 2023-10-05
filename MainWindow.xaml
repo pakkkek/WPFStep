@@ -12,7 +12,7 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Margin="2" Orientation="Vertical">
+        <WrapPanel Grid.Column="0" Margin="2">
             <Button Content="Navy" Background="Gray" Foreground="Navy" Margin="2"/>
             <Button Content="Blue" Background="Gray" Foreground="Blue" Margin="2"/>
             <Button Content="Aqua" Background="Gray" Foreground="Aqua" Margin="2"/>
@@ -30,6 +30,6 @@
             <Button Content="Silver" Background="Gray" Foreground="Silver" Margin="2"/>
             <Button Content="Gray" Background="Gray" Foreground="Gray" Margin="2"/>
             <Button Content="White" Background="Gray" Foreground="White" Margin="2"/>
-        </StackPanel>
+        </WrapPanel>
     </Grid>
 </Window>
