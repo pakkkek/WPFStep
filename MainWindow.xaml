@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="ColorButtons" Height="450" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="2" Orientation="Vertical">
+            <Button Content="Navy" Background="Gray" Foreground="Navy" Margin="2"/>
+            <Button Content="Blue" Background="Gray" Foreground="Blue" Margin="2"/>
+            <Button Content="Aqua" Background="Gray" Foreground="Aqua" Margin="2"/>
+            <Button Content="Teal" Background="Gray" Foreground="Teal" Margin="2"/>
+            <Button Content="Olive" Background="Gray" Foreground="Olive" Margin="2"/>
+            <Button Content="Green" Background="Gray" Foreground="Green" Margin="2"/>
+            <Button Content="Lime" Background="Gray" Foreground="Lime" Margin="2"/>
+            <Button Content="Yellow" Background="Gray" Foreground="Yellow" Margin="2"/>
+            <Button Content="Orange" Background="Gray" Foreground="Orange" Margin="2"/>
+            <Button Content="Red" Background="Gray" Foreground="Red" Margin="2"/>
+            <Button Content="Maroon" Background="Gray" Foreground="Maroon" Margin="2"/>
+            <Button Content="Fuchsia" Background="Gray" Foreground="Fuchsia" Margin="2"/>
+            <Button Content="Purple" Background="Gray" Foreground="Purple" Margin="2"/>
+            <Button Content="Black" Background="Gray" Foreground="Black" Margin="2"/>
+            <Button Content="Silver" Background="Gray" Foreground="Silver" Margin="2"/>
+            <Button Content="Gray" Background="Gray" Foreground="Gray" Margin="2"/>
+            <Button Content="White" Background="Gray" Foreground="White" Margin="2"/>
+        </StackPanel>
+    </Grid>
+</Window>
