@@ -5,31 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ColorButtons" Height="450" Width="400">
+        Title="ColorButtons" Height="300" Width="500">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="1*"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
 
-        <StackPanel Grid.Column="0" Margin="2" Orientation="Vertical">
-            <Button Content="Navy" Background="Gray" Foreground="Navy" Margin="2"/>
-            <Button Content="Blue" Background="Gray" Foreground="Blue" Margin="2"/>
-            <Button Content="Aqua" Background="Gray" Foreground="Aqua" Margin="2"/>
-            <Button Content="Teal" Background="Gray" Foreground="Teal" Margin="2"/>
-            <Button Content="Olive" Background="Gray" Foreground="Olive" Margin="2"/>
-            <Button Content="Green" Background="Gray" Foreground="Green" Margin="2"/>
-            <Button Content="Lime" Background="Gray" Foreground="Lime" Margin="2"/>
-            <Button Content="Yellow" Background="Gray" Foreground="Yellow" Margin="2"/>
-            <Button Content="Orange" Background="Gray" Foreground="Orange" Margin="2"/>
-            <Button Content="Red" Background="Gray" Foreground="Red" Margin="2"/>
-            <Button Content="Maroon" Background="Gray" Foreground="Maroon" Margin="2"/>
-            <Button Content="Fuchsia" Background="Gray" Foreground="Fuchsia" Margin="2"/>
-            <Button Content="Purple" Background="Gray" Foreground="Purple" Margin="2"/>
-            <Button Content="Black" Background="Gray" Foreground="Black" Margin="2"/>
-            <Button Content="Silver" Background="Gray" Foreground="Silver" Margin="2"/>
-            <Button Content="Gray" Background="Gray" Foreground="Gray" Margin="2"/>
-            <Button Content="White" Background="Gray" Foreground="White" Margin="2"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Username:" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <TextBox x:Name="usernameTextBox" Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="300" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Password:" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <PasswordBox x:Name="passwordBox" Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="300" />
+        </StackPanel>
+
+        <TextBlock x:Name="errorTextBlock" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="IndianRed" Visibility="Hidden"/>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 20 0">
+            <Button
+                Content="Log In"
+                Background="Green"
+                Height="30" Width="100" Margin="0 0 10 0"
+                Click="LoginButton_Click"/>
+            <Button Content="Cancel" Background="Red" Width="100" Click="CancelButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>
