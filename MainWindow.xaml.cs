@@ -12,17 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Domain;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        UsersList list;
         public MainWindow()
         {
+            list = new UsersList();
+            list.AddUser(new User("Alexander", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Aleksey", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Egor", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Oleg", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Alexander", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Aleksey", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Egor", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Oleg", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Alexander", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Aleksey", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Egor", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
+            list.AddUser(new User("Oleg", @"C:\Users\Kpojl\Source\Repos\WpfApp1\Assets\user-icon.jpg", "+380930000000"));
             InitializeComponent();
+            LVUsers.ItemsSource = list.users;
         }
     }
 }
