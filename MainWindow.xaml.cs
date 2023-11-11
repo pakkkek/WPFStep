@@ -15,14 +15,32 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void NewGameButton_Click(object sender, RoutedEventArgs e)
+        {
+            NewGameWindow newGameWindow = new NewGameWindow();
+            newGameWindow.Show();
+            this.Close();
+        }
+
+        private void StatisticsButton_Click(object sender, RoutedEventArgs e)
+        {
+            StatisticsWindow statisticsWindow = new StatisticsWindow();
+            statisticsWindow.Show();
+            this.Close();
+        }
+
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
+        {
+            AboutWindow aboutWindow = new AboutWindow();
+            aboutWindow.Show();
+            this.Close();
         }
     }
 }

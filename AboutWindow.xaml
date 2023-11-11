@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="2048" Height="600" Width="450" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightGray">
+        <StackPanel Margin="40,0,40,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Margin="0,0,0,20" Text="About" FontSize="40" FontFamily="Lucida Console" FontWeight="Bold" Foreground="DarkSlateGray"/>
+
+            <TextBlock Margin="0,0,0,10" FontSize="18" FontFamily="Lucida Console" TextWrapping="Wrap" Foreground="DarkSlateGray">
+                       <Run FontWeight="Bold">How to play:</Run> Use your arrow keys or swipe with your fingers to move the tiles.
+                       Tiles with the same number merge into one when they touch. Add them up to reach 2048!
+            </TextBlock>
+
+            <TextBlock FontSize="14" FontFamily="Lucida Console" FontStyle="Italic" Foreground="DarkSlateGray">
+                       <Run FontWeight="Bold">Developed by:</Run> Alexander Kalinin (pakkkek)
+            </TextBlock>
+        </StackPanel>
+
+        <!-- Back Menu -->
+        <Button Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Back"
+                FontSize="14" FontFamily="Lucida Console"
+                Background="DimGray" Foreground="White"
+                Click="BackButton_Click"/>
+    </Grid>
+</Window>
